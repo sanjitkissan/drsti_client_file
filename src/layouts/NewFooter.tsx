@@ -103,10 +103,10 @@ export default function NewFooter() {
             <a
               className="underline"
               href="https://exogenoustechnology.com/"
-              target={"_blank"}
+              // target={"_blank"}
             >
-              website developed by ET -
-            </a>{" "}
+              website developed by 
+            </a> ET -
           </h1>
         </section>
       </div>

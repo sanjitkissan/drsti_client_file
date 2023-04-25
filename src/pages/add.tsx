@@ -13,6 +13,7 @@ import ResponsiveSlider from "../components/newladingpage/ResponsiveSlider";
 import Testimonials from "../components/newladingpage/Testimonials";
 import Footer from "../layouts/Footer";
 import ResponsiveNewSection from "../components/newladingpage/ResponsiveNewSection";
+import NewFooter from "../layouts/NewFooter";
 
 export default function Add ({title="dRSTi"}){
     return(
@@ -34,8 +35,7 @@ export default function Add ({title="dRSTi"}){
       {/* <Testimonials/> */}
       {/* <OurTeam/> */}
       <CardSection/>
-      
-      <Footer/>
+      <NewFooter/>
         </>
     )
 }
