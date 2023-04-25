@@ -19,6 +19,11 @@ export default function LandingForm(prop: {
     isOpen: boolean;
     setIsOpen: Dispatch<SetStateAction<boolean>>;
   }) {
+
+    const downloadPDF = () => {
+        window.open(`https://drive.google.com/file/d/10REt4OydmaUFD4vVvXdXYXYD7Vq9suT2/view`, "width=2480,height=3508");
+      };
+
     let initialValues: FormType={
 
         name: "",
@@ -55,6 +60,7 @@ export default function LandingForm(prop: {
             icon: "success",
             
         });
+        downloadPDF()
     },
 
     });

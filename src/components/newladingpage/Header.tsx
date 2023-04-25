@@ -5,6 +5,12 @@ import LandingForm from "./LandingForm";
 
 export default function Header(){
     const [isOpen, setIsOpen]=useState<boolean>(false)
+
+
+
+ 
+
+
     return(
         <section className="bg-white">
         <section className="w-full main-container h-20 flex items-center justify-between">
@@ -14,7 +20,10 @@ export default function Header(){
                 </Link>
             </div>
             <div className="w-full flex items-center justify-end">
-                <button className="px-6 py-2 rounded-full text-white bg-gradient-to-r from-black to-red-600 border-b font-bold capitalize" type="button" onClick={()=>{setIsOpen(true)}} >Contact for advertising</button>
+                <button className="px-6 py-2 rounded-full text-white bg-gradient-to-r from-black to-red-600 border-b font-bold capitalize" type="button" onClick={()=>{
+                    setIsOpen(true)
+                    
+                    }} >Download the Media Deck</button>
             </div>
         </section>
         <LandingForm isOpen={isOpen} setIsOpen={setIsOpen}/>
