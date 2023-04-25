@@ -1,0 +1,5 @@
+export {default as slider1} from "./slider1.svg"
+export {default as slider2} from "./slider2.svg"
+export {default as slider3} from "./slider3.svg"
+export {default as slider4} from "./slider4.svg"
+export {default as slider5} from "./slider5.svg"

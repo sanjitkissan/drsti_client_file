@@ -1,0 +1,7 @@
+export {default as slide1} from "./slide1.svg"
+export {default as slide2} from "./slide2.svg"
+export {default as slide3} from "./slide3.svg"
+export {default as slide4} from "./slide4.svg"
+export {default as slide5} from "./slide5.svg"
+export {default as slide6} from "./slide6.svg"
+export {default as slide7} from "./slide7.svg"
