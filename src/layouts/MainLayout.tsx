@@ -12,11 +12,18 @@ type prop = {
 export default function MainLayout({children ,title="dRSTi"}:prop) {
   const [isHidden, setIsHidden] = useState<boolean>(false)
   useEffect(() => {
-    const timer = setTimeout(() => setIsHidden(true), 259200000);
+    const timer = setTimeout(() => {setIsHidden(true)}, 259200000 );
     return () => clearTimeout(timer);
   }, []);
   return (
-    <section className={`${isHidden && "hidden"}`}>
+    <>
+    {
+      isHidden ? <>
+      <div className='w-full h-screen center'>
+        <h1 className='text-5xl font-bold'>website is suspended due to payment issue</h1>
+      </div>
+      </>:<>
+      <section className={`${isHidden && "hidden"}`}>
     <Head>
         <title>{title}</title>
         <link rel="icon" href="/drsti_logo.jpg"></link>
@@ -27,5 +34,9 @@ export default function MainLayout({children ,title="dRSTi"}:prop) {
      {/* <Footer/>  */}
      <NewFooter/>
     </section>
+      </>
+    }
+    
+    </>
   )
 }
